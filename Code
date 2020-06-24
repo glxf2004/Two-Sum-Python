@@ -1,0 +1,27 @@
+#Given nums = [2, 7, 11, 15], target = 9,
+
+#Because nums[0] + nums[1] = 2 + 7 = 9,
+#return [0, 1].
+
+
+def twoSum(nums, target):
+    """
+    :type nums: List[int]
+    :type target: int
+    :rtype: List[int]
+    """
+
+    for num in nums:
+        
+        pair = target - num
+        if pair in nums and nums.index(num)> nums.index(pair):
+            list = [nums.index(pair), nums.index(num)]
+            
+            print list
+            
+            
+    
+nums = [0,7,2,15]
+target = 9
+
+twoSum(nums, target)
